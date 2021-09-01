@@ -26,6 +26,13 @@ services:
       database__connection__user: peregrine
       database__connection__password: SUPER_SECRET_PASSWORD
       database__connection__database: peregrine
+      mail__transport: SMTP
+      mail__options__service: Zoho
+      mail__options__host: smtppro.zoho.com
+      mail__options__port: 465
+      mail__options__secureConnection: true
+      mail__options__auth__user: yourSMTPuser@peregrinesparlor.com
+      mail__options__auth__pass: SUPER_SECRET_PASSWORD
       url: https://www.peregrinesparlor.com
     deploy:
       replicas: 1
